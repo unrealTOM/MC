@@ -34,6 +34,9 @@ X=X[:1000]
 
 x = np.linspace(-4,4,500)
 plt.plot(x,p(x))
-plt.hist(X,bins=100,normed=True)
+plt.hist(X,bins=100,density=True)
 plt.title('Rejection Sampling')
+plt.show()
+
+plt.savefig('result.png', dpi=100)
 print (N/count) #proportion of raw sample used

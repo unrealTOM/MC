@@ -19,7 +19,7 @@ for i in range(4):
     for j in range(N[i]):
         u = np.random.rand()
         x_star = np.random.normal(x,10)
-        A = min(1,p(x_star)*q(x,x_star)/p(x)/q(x_star,x))
+        A = min(1,p(x_star)/p(x)) #*q(x,x_star)/p(x)/q(x_star,x))
         if u < A:
             x = x_star
         X=np.hstack((X,x))

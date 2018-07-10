@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 def p(x):
  #standard normal
@@ -26,5 +27,6 @@ for i in range(M):
 
 x = np.linspace(-4,4,500)
 plt.plot(x,p(x))
-plt.hist(X,bins=100,normed=True)
+plt.hist(X,bins=100,density=True)
 plt.title('Sampling Importance Resampling')
+plt.show()

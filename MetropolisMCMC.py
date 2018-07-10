@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as pl
+import matplotlib.pyplot as plt
 
 def q(x_star,x):
  #normal distribution

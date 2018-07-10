@@ -1,3 +1,6 @@
+import numpy as np
+import matplotlib.pyplot as pl
+
 def q(x_star,x):
  #normal distribution
     mu=x

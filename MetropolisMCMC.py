@@ -24,7 +24,7 @@ for i in range(4):
             x = x_star
         X=np.hstack((X,x))
     ax = fig.add_subplot(2,2,i+1)
-    ax.hist(X,bins=100,normed=True)
+    ax.hist(X,bins=100,density=True)
     x = np.linspace(-10,20,5000)
     ax.plot(x,p(x)/2.7) #2.7 is just a number that approximates the normalizing constant
     ax.set_ylim(0,0.35)

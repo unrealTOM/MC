@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 def q(x_star,x):
  #normal distribution
@@ -29,3 +30,4 @@ for i in range(4):
     ax.set_ylim(0,0.35)
     ax.text(-9,0.25,'I=%d'%N[i])
 fig.suptitle('Metropolis_Hastings for MCMC')
+plt.show()

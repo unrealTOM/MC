@@ -32,6 +32,7 @@ X=X[:1000]
 
 x = np.linspace(-4,4,500)
 plt.plot(x,p(x))
+plt.plot(x,M*q(x))
 plt.hist(X,bins=100,density=True)
 plt.title('Rejection Sampling')
 plt.show()

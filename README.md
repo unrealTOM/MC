@@ -1,4 +1,4 @@
-# MC
+# Monte Carlo Method: Simple Examples
 
 some materials:
 

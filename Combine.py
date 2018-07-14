@@ -2,8 +2,10 @@ import os
 from PIL import Image
 
 files = [
-  'ImpSampling1.png',
-  'ImpSampling2.png']
+  'RejSamplingUniform.png',
+  'RejSamplingNormal.png']
+#  'ImpSampling1.png',
+#  'ImpSampling2.png']
 #  'normal1.png',
 #  'normal2.png']
 #  'uniform1.png',
@@ -26,6 +28,7 @@ for index, file in enumerate(files):
   print(x,y,w,h)
   result.paste(img, (x, height - h, x + w, height))
 
-result.save(os.path.expanduser('ImpSampling.png'))
+result.save(os.path.expanduser('RejSampling.png'))
+#result.save(os.path.expanduser('ImpSampling.png'))
 #result.save(os.path.expanduser('normal.png'))
 #result.save(os.path.expanduser('uniform.png'))

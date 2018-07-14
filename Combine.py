@@ -2,14 +2,18 @@ import os
 from PIL import Image
 
 files = [
-  'normal1.png',
-  'normal2.png']
+  'ImpSampling1.png',
+  'ImpSampling2.png']
+#  'normal1.png',
+#  'normal2.png']
 #  'uniform1.png',
 #  'uniform2.png']
 
-halfWidth = 400
+halfWidth = 480
+#halfWidth = 400
 #halfWidth = 300
-height = 240
+height = 350
+#height = 240
 #height = 220
 result = Image.new("RGBA", (halfWidth * 2, height))
 
@@ -22,5 +26,6 @@ for index, file in enumerate(files):
   print(x,y,w,h)
   result.paste(img, (x, height - h, x + w, height))
 
-result.save(os.path.expanduser('normal.png'))
+result.save(os.path.expanduser('ImpSampling.png'))
+#result.save(os.path.expanduser('normal.png'))
 #result.save(os.path.expanduser('uniform.png'))
